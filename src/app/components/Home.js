@@ -12,7 +12,7 @@ export class Home extends React.Component{
                 <div>
                     <h4>Hobbies</h4>
                     <ul>
-                        {this.props.user.hobbies.map((hobby)=><li>{hobby}</li>)}
+                        {this.props.user.hobbies.map((hobby,i)=><li key={i}>{hobby}</li>)}
                     </ul>
                 </div>
             </div>
